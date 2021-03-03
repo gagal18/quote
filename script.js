@@ -22,7 +22,7 @@ async function getQuote() {
     loading()
     const apiUrl = 'https:/type.fit/api/quotes'
     try {
-        const response = await fetch(apiUrl)
+        const response = await fetch('https:/type.fit/api/quotes')
         const data = await response.json();
         var x = Math.floor(Math.random() * 1644);
         const quote = data[x].text
